@@ -1,0 +1,22 @@
+.gameboy {
+    position: relative;
+    display: block;
+    margin: 20px;
+    width: 422px;
+    height: 697px;
+    background: #eeeeee;
+    border-radius: 0px 0px 60px 10px;
+    /* box-shadow: 5px 5px rgba(0, 0, 0, 0.1); */
+    /* antes */
+    /* content: "";
+    position: absolute; */
+    /* después */
+    /* content: "";
+    position: absolute;
+    top: 0;
+    width: 334px;
+    height: 31px;
+    border-left: 4px solid #e0e0e0;
+    margin-left: 40px;
+    margin-right: 40px; */
+}
