@@ -1,11 +1,24 @@
-.gameboy {
-    position: relative;
+/* .top-principal {
+    position: absolute;
+    background-color: red;
+    background: #eeeeee;
+    border-radius: 15px 15px 0px 0px;
+    height: 40px;
+    width: 422px;
+    margin: 0em;
+    border-bottom: 40px;
+    margin-bottom: 0px;
+} */
+
+.cuerpo {
+    position: absolute;
     display: block;
     margin: 20px;
-    width: 422px;
     height: 697px;
+    width: 422px;
     background: #eeeeee;
-    border-radius: 0px 0px 60px 10px;
+    border-radius: 15px 15px 60px 10px;
+    margin: 0em;
     /* box-shadow: 5px 5px rgba(0, 0, 0, 0.1); */
     /* antes */
     /* content: "";
@@ -19,4 +32,41 @@
     border-left: 4px solid #e0e0e0;
     margin-left: 40px;
     margin-right: 40px; */
+}
+
+.top-linea-vertical1 {
+    position: absolute;
+    background: rgb(230, 229, 229);
+    /* background: red; */
+    height: 30px;
+    width: 4px;
+    margin-left: 50px;
+}
+
+.top-linea-vertical2 {
+    position: absolute;
+    background: rgb(230, 229, 229);
+    /* background: red; */
+    height: 30px;
+    width: 4px;
+    margin-left: 365px;
+}
+
+.top-linea-horizontal {
+    position: absolute;
+    height: 4px;
+    width: 422px;
+    background: rgb(230, 229, 229);
+    /* background: red; */
+    margin-top: 30px;
+}
+
+.marco-pantalla {
+    position: absolute;
+    background: gray;
+    height: 280px;
+    width: 340px;
+    border-radius: 12px 12px 60px 12px;
+    margin-top: 55px;
+    margin-left: 40px;
 }
