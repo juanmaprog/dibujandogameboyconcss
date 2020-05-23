@@ -219,7 +219,7 @@
     border-left: 7px solid #dedede;
 }
 
-.boton-a {
+.boton-ab-fondo {
     position: absolute;
     background: #dfdfdf;
     width: 130px;
@@ -228,6 +228,19 @@
     left: 260px;
     border-radius: 30px;
     -webkit-transform: rotate(-25deg);
+}
+
+.botones-ab {
+    content: "";
+    position: absolute;
+    width: 44px;
+    height: 44px;
+    top: 424px;
+    left: 334px;
+    background: #a93671;
+    box-shadow: 18px 68px #a93671;
+    border-radius: 100%;
+    -webkit-transform: rotate(80deg);
 }
 
 /* EVENTOS */
