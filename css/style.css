@@ -104,3 +104,14 @@
     top: 100px;
     left: 100px;
 }
+
+.led-bateria {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    top: 165px;
+    left: 70px;
+    background-color: #b98181;
+    border-radius: 100%;
+}
