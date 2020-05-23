@@ -199,11 +199,11 @@
     /* background-color: red; */
     width: 0px;
     height: 0px;
-    top: 450px;
-    left: 30px;
-    border-left: 7px solid transparent;
-    border-right: 7px solid transparent;
-    border-bottom: 7px solid #dedede;
+    top: 457px;
+    left: 38px;
+    border-top: 7px solid transparent;
+    border-bottom: 7px solid transparent;
+    border-right: 7px solid #dedede;
 }
 
 .boton-direccion-horizontal-despues {
@@ -212,11 +212,11 @@
     /* background-color: red; */
     width: 0px;
     height: 0px;
-    top: 515px;
-    left: 88px;
-    border-left: 7px solid transparent;
-    border-right: 7px solid transparent;
-    border-top: 7px solid #dedede;
+    top: 458px;
+    left: 144px;
+    border-top: 7px solid transparent;
+    border-bottom: 7px solid transparent;
+    border-left: 7px solid #dedede;
 }
 
 .boton-a {
