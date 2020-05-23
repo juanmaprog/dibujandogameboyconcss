@@ -17,7 +17,7 @@
     height: 697px;
     width: 422px;
     background: #eeeeee;
-    border-radius: 15px 15px 60px 10px;
+    border-radius: 10px 10px 60px 10px;
     margin: 0em;
     box-shadow: 5px 5px rgba(0, 0, 0, 0.1);
 }
@@ -28,7 +28,8 @@
     /* background: red; */
     height: 30px;
     width: 4px;
-    margin-left: 50px;
+    margin-left: 35px;
+    box-shadow: inset 1px 1px 5px -2px rgb(177, 177, 177);
 }
 
 .top-linea-vertical2 {
@@ -37,7 +38,8 @@
     /* background: red; */
     height: 30px;
     width: 4px;
-    margin-left: 366px;
+    margin-left: 380px;
+    box-shadow: inset 1px 1px 5px -2px rgb(177, 177, 177);
 }
 
 .top-linea-horizontal {
@@ -47,6 +49,7 @@
     background: rgb(230, 229, 229);
     /* background: red; */
     margin-top: 30px;
+    box-shadow: inset 1px 1px 2px 1px rgb(177, 177, 177);
 }
 
 .marco-pantalla {
@@ -57,6 +60,7 @@
     border-radius: 12px 12px 60px 12px;
     margin-top: 55px;
     margin-left: 40px;
+    box-shadow: inset 2px 2px 10px 2px rgb(192, 190, 190);
 }
 
 .linea-marco-pantalla1 {
@@ -92,17 +96,20 @@
     font-family: sans-serif;
     font-size: 10px;
     color: #b3b3b3;
+    box-sizing: border-box;
 }
 
 .pantalla-amarillo-verdoso {
     content: "";
     position: absolute;
-    background: #bdae58;
+    /* background: #bdae58; */
+    background: #9CA04C;
     width: 225px;
     height: 205px;
-    box-shadow: inset 3px 3px rgba(0, 0, 0, 0.15);
     top: 100px;
     left: 100px;
+    border: thick;
+    box-shadow: inset 4px 4px 5px rgba(0, 0, 0, 0.15), inset -4px 4px 5px rgba(0, 0, 0, 0.15);
 }
 
 .led-bateria-apagado {
@@ -111,9 +118,21 @@
     width: 10px;
     height: 10px;
     top: 165px;
-    left: 70px;
+    left: 65px;
     background-color: #b98181;
     border-radius: 100%;
+}
+
+.led-bateria-encendido {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    top: 165px;
+    left: 65px;
+    border-radius: 100%;
+    background-color: red;
+    box-shadow: 0 0 3px 1px #ef5350;
 }
 
 .texto-bateria {
@@ -219,6 +238,8 @@
     border-left: 7px solid #dedede;
 }
 
+/* BOTONES AB */
+
 .boton-ab-fondo {
     position: absolute;
     background: #dfdfdf;
@@ -227,20 +248,136 @@
     top: 430px;
     left: 260px;
     border-radius: 30px;
-    -webkit-transform: rotate(-25deg);
+    box-shadow: inset 1px 15px 17px 1px rgb(180, 180, 180), inset -30px -37px 20px 10px rgb(255, 255, 255);
+    transform: rotate(-25deg);
 }
 
-.botones-ab {
+.botones-ab_xx {
     content: "";
-    position: absolute;
+    position: relative;
     width: 44px;
     height: 44px;
-    top: 424px;
-    left: 334px;
+    /* top: 424px; */
+    /* left: 334px; */
+    top: 8px;
+    left: 77px;
     background: #a93671;
-    box-shadow: 18px 68px #a93671;
     border-radius: 100%;
-    -webkit-transform: rotate(80deg);
+    /* box-shadow: 18px 68px #a93671; */
+    box-shadow: 18px 68px #a93671;
+    transform: rotate(104deg);
+}
+
+.boton-a {
+    content: "";
+    position: relative;
+    width: 44px;
+    height: 44px;
+    top: 8px;
+    left: 79px;
+    background: #7E0221;
+    border-radius: 100%;
+    box-shadow: -1px -1px 2px 0px #353234, inset -1px 2px 8px 0px #fcf9fb;
+}
+
+.boton-b {
+    content: "";
+    position: relative;
+    width: 44px;
+    height: 44px;
+    top: -34px;
+    left: 8px;
+    background: #7E0221;
+    border-radius: 100%;
+    box-shadow: -1px -1px 2px 0px #353234, inset -1px 2px 8px 0px #fcf9fb;
+}
+
+.texto-boton-ab {
+    content: "";
+    position: absolute;
+    top: 47px;
+    left: 27px;
+    color: rgb(81, 80, 122);
+    font-family: 'Nova Square';
+    font-size: 15px;
+    font-style: initial;
+    font-stretch: ultra-condensed;
+    font-weight: bold;
+    justify-content: left;
+}
+
+.botones-seleccion {
+    content: "";
+    position: absolute;
+    background: #9999;
+    /* background-color: #9999; */
+    border-radius: 10px;
+    width: 60px;
+    height: 12px;
+    top: 570px;
+    left: 150px;
+    /* Según el navegador hay que añadir el prefijo:
+        chrome: -webkit
+        firefox: -moz
+        resto: sin prefijo
+     */
+    /* Crear la sombra. Valores de desplazamiento:
+       horizontal vertical [desenfoque difusiónPropagación extensión color internaExterna]    
+    */
+    /* color: #dfdfdf; */
+    /* box-shadow: 57px 27px 0px #999, 0 0 0 5px #dfdfdf, 57px 27px 0 5px #dfdfdf; */
+    box-shadow: 57px 27px 0px #999, 0 0 0 5px #dfdfdf, 57px 27px 0 5px #dfdfdf;
+    transform: rotate(-25deg);
+}
+
+.ranuras-altavoz {
+    content: "";
+    position: absolute;
+    background: #dfdfdf;
+    border-radius: 10px;
+    width: 8px;
+    height: 80px;
+    top: 626px;
+    left: 315px;
+    box-shadow: 20px 0px 0px 0px #dfdfdf, 40px 0px 0px 0px #dfdfdf, 60px 0px 0px 0px #dfdfdf, 80px 0px 0px 0px #dfdfdf, 100px 0px 0px 0px #dfdfdf;
+    box-shadow: inset -1px 1px 5px -2px rgb(177, 177, 177), 20px 1px 0px 0px rgb(214, 214, 214), 40px 1px 0px 0px rgb(214, 214, 214), 60px 1px 0px 0px rgb(214, 214, 214), 80px 1px 0px 0px rgb(214, 214, 214), 100px -0px 0px 0px rgb(214, 214, 214);
+    transform: rotate(-30deg);
+}
+
+.auriculares {
+    content: "";
+    position: absolute;
+    background-color: #e8e8e8;
+    width: 47px;
+    height: 12px;
+    top: 685px;
+    left: 200px;
+    border-radius: 60px;
+    margin: 0px;
+}
+
+.texto-auriculares {
+    /* position: relative; */
+    color: #dadada;
+    font-family: sans-serif;
+    font-size: 8px;
+    text-align: center;
+    top: 50%;
+    transform: translateY(-5px);
+}
+
+.indicador-auriculares {
+    position: relative;
+    /* background: red; */
+    background-color: #e8e8e8;
+    width: 3px;
+    height: 8px;
+    margin-top: -12px;
+    margin-left: 25px;
+    /* Crear la sombra. Valores de desplazamiento:
+       horizontal vertical [desenfoque difusiónPropagación extensión color internaExterna]    
+    */
+    box-shadow: 5px 0px 0px 0px #e8e8e8, 10px 0px 0px 0px #e8e8e8;
 }
 
 /* EVENTOS */
@@ -251,16 +388,4 @@
 
 .is-big {
     --is-big: 1;
-}
-
-.led-bateria-encendido {
-    content: "";
-    position: absolute;
-    width: 10px;
-    height: 10px;
-    top: 165px;
-    left: 70px;
-    border-radius: 100%;
-    background-color: red;
-    box-shadow: 0 0 3px 1px #ef5350;
 }
