@@ -126,6 +126,110 @@
     color: #b3b3b3;
 }
 
+/* BOTONES */
+
+.botones {
+    display: block;
+    position: absolute;
+    margin-top: 90px;
+}
+
+.boton-direccion-vertical {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 93px;
+    top: 420px;
+    left: 80px;
+    background: #444;
+    border-radius: 5px;
+}
+
+.boton-direccion-horizontal {
+    content: "";
+    position: absolute;
+    width: 93px;
+    height: 30px;
+    top: 450px;
+    left: 48px;
+    background: #444;
+    border-radius: 5px;
+}
+
+.boton-direccion-central {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 450px;
+    left: 80px;
+    background-color: #353535;
+    border-radius: 100%;
+}
+
+.boton-direccion-vertical-antes {
+    content: "";
+    position: absolute;
+    /* background-color: red; */
+    width: 0px;
+    height: 0px;
+    top: 410px;
+    left: 88px;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-bottom: 7px solid #dedede;
+}
+
+.boton-direccion-vertical-despues {
+    content: "";
+    position: absolute;
+    /* background-color: red; */
+    width: 0px;
+    height: 0px;
+    top: 515px;
+    left: 88px;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-top: 7px solid #dedede;
+}
+
+.boton-direccion-horizontal-antes {
+    content: "";
+    position: absolute;
+    /* background-color: red; */
+    width: 0px;
+    height: 0px;
+    top: 450px;
+    left: 30px;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-bottom: 7px solid #dedede;
+}
+
+.boton-direccion-horizontal-despues {
+    content: "";
+    position: absolute;
+    /* background-color: red; */
+    width: 0px;
+    height: 0px;
+    top: 515px;
+    left: 88px;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-top: 7px solid #dedede;
+}
+
+.boton-a {
+    position: absolute;
+    background: #dfdfdf;
+    width: 130px;
+    height: 60px;
+    top: 430px;
+    left: 260px;
+    border-radius: 30px;
+    -webkit-transform: rotate(-25deg);
+}
+
 /* EVENTOS */
 
 :root {
@@ -145,4 +249,5 @@
     left: 70px;
     border-radius: 100%;
     background-color: red;
+    box-shadow: 0 0 3px 1px #ef5350;
 }
