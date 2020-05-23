@@ -105,7 +105,7 @@
     left: 100px;
 }
 
-.led-bateria {
+.led-bateria-apagado {
     content: "";
     position: absolute;
     width: 10px;
@@ -114,4 +114,35 @@
     left: 70px;
     background-color: #b98181;
     border-radius: 100%;
+}
+
+.texto-bateria {
+    content: "";
+    position: absolute;
+    font-family: sans-serif;
+    font-size: 8px;
+    top: 182px;
+    left: 58px;
+    color: #b3b3b3;
+}
+
+/* EVENTOS */
+
+:root {
+    --is-big: 1;
+}
+
+.is-big {
+    --is-big: 1;
+}
+
+.led-bateria-encendido {
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    top: 165px;
+    left: 70px;
+    border-radius: 100%;
+    background-color: red;
 }
