@@ -93,3 +93,14 @@
     font-size: 10px;
     color: #b3b3b3;
 }
+
+.pantalla-amarillo-verdoso {
+    content: "";
+    position: absolute;
+    background: #bdae58;
+    width: 225px;
+    height: 205px;
+    box-shadow: inset 3px 3px rgba(0, 0, 0, 0.15);
+    top: 100px;
+    left: 100px;
+}
