@@ -1,6 +1,6 @@
 /* VARIABLES */
 
-/* TODO: Falta inplementar las variables con sus correspondientes eventos */
+/* TODO: Entán declaradas la variable pero aún falta inplementar sus correspondientes eventos */
 :root {
   --encendida: 0;
 }
@@ -402,7 +402,7 @@
   justify-content: left;
 }
 
-.botones-seleccion {
+.botones-select-start {
   content: "";
   position: absolute;
   background: #9999;
@@ -413,6 +413,26 @@
   left: 150px;
   box-shadow: 57px 27px 0px #999, 0 0 0 5px #dfdfdf, 57px 27px 0 5px #dfdfdf;
   transform: rotate(-25deg);
+}
+
+.texto-select {
+  position: relative;
+  color: #283593;
+  font-family: "Open Sans";
+  font-size: 12px;
+  font-weight: bold;
+  top: 5px;
+  left: 10px;
+}
+
+.texto-start {
+  position: relative;
+  color: #283593;
+  font-family: "Open Sans";
+  font-size: 12px;
+  font-weight: bold;
+  top: 5px;
+  left: 70px;
 }
 
 .ranuras-altavoz {
