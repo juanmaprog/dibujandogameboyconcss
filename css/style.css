@@ -1,14 +1,15 @@
-/* .top-principal {
-    position: absolute;
-    background-color: red;
-    background: #eeeeee;
-    border-radius: 15px 15px 0px 0px;
-    height: 40px;
-    width: 422px;
-    margin: 0em;
-    border-bottom: 40px;
-    margin-bottom: 0px;
-} */
+/* VARIABLES */
+
+/* TODO: Falta inplementar las variables con sus correspondientes eventos */
+:root {
+  --encendida: 0;
+}
+
+.encendida {
+  --encendida: 1;
+}
+
+/* DISEÑO */
 
 .carcasa {
   position: absolute;
@@ -19,32 +20,22 @@
   background: #eeeeee;
   border-radius: 10px 10px 60px 10px;
   margin: 0em;
+  /* Según el navegador hay que añadir el prefijo:
+        chrome: -webkit
+        firefox: -moz
+        resto: sin prefijo
+        Ejemplo: -webkit-box-shadow: 5px 5px rgba(0, 0, 0, 0.1);
+     */
+  /* Crear la sombra. Valores de desplazamiento:
+       horizontal vertical [desenfoque difusiónPropagación extensión color internaExterna]    
+   */
   box-shadow: 5px 5px rgba(0, 0, 0, 0.1);
-}
-
-.texto-nintendo-game-boy-tm {
-  content: "";
-  display: flex;
-  position: relative;
-  /* font-family:  fantasy; */
-  /* font-family: sans-serif; */
-  /* font-size: 22px; */
-  top: 340px;
-  left: 40px;
-  /* margin: 0; */
-  color: #283593;
-  font-weight: bold;
 }
 
 .texto-nintendo {
   content: "";
-  /* display: contents; */
-  /* position: relative; */
-  /* font-family:  fantasy; */
   font-family: sans-serif;
   font-size: 20px;
-  /* top: 40px; */
-  /* left: 40px;  */
   margin: 0;
   margin-top: 6px;
   text-align: center;
@@ -52,41 +43,36 @@
 
 .texto-gameboy {
   content: "";
-  /* display: flex; */
-  /* position: relative; */
-  /* font-family:  fantasy; */
-  font-family: "Open Sans"; /*"Roboto";*/
+  font-family: "Open Sans";
   font-size: 28px;
   font-style: oblique;
   font-stretch: ultra-condensed;
-  /* font-weight: bold; */
-  /* top: 40px; */
-  /* left: 40px;  */
   margin: 0;
   margin-top: -6px;
   margin-left: -7px;
-  /* text-align: center; */
 }
 
 .texto-tm {
   content: "";
-  /* display: flex; */
-  /* position: relative; */
-  /* font-family:  fantasy; */
   font-family: sans-serif;
   font-size: 10px;
-  /* top: 40px; */
-  /* left: 40px;  */
   margin: 0;
   margin-top: 16px;
   margin-left: -6px;
-  /* text-align: center; */
 }
-
+.texto-nintendo-game-boy-tm {
+  content: "";
+  display: flex;
+  position: relative;
+  top: 340px;
+  left: 40px;
+  color: #283593;
+  font-weight: bold;
+  font-size-adjust: 50;
+}
 .top-linea-vertical1 {
   position: absolute;
   background: rgb(230, 229, 229);
-  /* background: red; */
   height: 30px;
   width: 4px;
   margin-left: 35px;
@@ -96,7 +82,6 @@
 .top-linea-vertical2 {
   position: absolute;
   background: rgb(230, 229, 229);
-  /* background: red; */
   height: 30px;
   width: 4px;
   margin-left: 380px;
@@ -108,7 +93,6 @@
   height: 4px;
   width: 422px;
   background: rgb(230, 229, 229);
-  /* background: red; */
   margin-top: 30px;
   box-shadow: inset 1px 1px 2px 1px rgb(177, 177, 177);
 }
@@ -163,7 +147,6 @@
 .pantalla-amarillo-verdoso {
   content: "";
   position: absolute;
-  /* background: #bdae58; */
   background: #9ca04c;
   width: 225px;
   height: 205px;
@@ -262,12 +245,11 @@
   height: 4px;
   top: 70px;
   left: 8px;
-  /* border-radius: 0%; */
   box-shadow: 0px 1px 3px 1px rgb(68, 67, 67), 6px 1px 3px 1px rgb(68, 67, 67),
     12px 1px 3px 1px rgb(68, 67, 67), 0px 8px 3px 1px rgb(68, 67, 67),
     6px 8px 3px 1px rgb(68, 67, 67), 12px 8px 3px 1px rgb(68, 67, 67),
     0px 15px 3px 1px rgb(68, 67, 67), 6px 15px 3px 1px rgb(68, 67, 67),
-    12px 15px 3px 1px rgb(68, 67, 67);
+    12px 15px 3px 1px rgb(70, 60, 60);
 }
 
 .boton-direccion-horizontal {
@@ -277,7 +259,6 @@
   height: 30px;
   top: 450px;
   left: 48px;
-  /* background: #444; */
   background: black;
   border-radius: 5px;
   box-shadow: inset -1px -1px 5px 1px rgb(48, 48, 48), 1px 1px 2px 1px black;
@@ -294,7 +275,6 @@
   border-radius: 20%;
   box-shadow: 0px 0px 4px 2px rgb(253, 253, 253),
     62px 0px 4px 2px rgb(253, 253, 253);
-  /* opacity: 90%; */
 }
 
 .boton-direccion-central {
@@ -304,7 +284,6 @@
   height: 30px;
   top: 450px;
   left: 80px;
-  /* background-color: #353535; */
   background-color: rgb(24, 24, 24);
   border-radius: 20%;
 }
@@ -325,7 +304,6 @@
 .boton-direccion-vertical-antes {
   content: "";
   position: absolute;
-  /* background-color: red; */
   width: 0px;
   height: 0px;
   top: 410px;
@@ -338,7 +316,6 @@
 .boton-direccion-vertical-despues {
   content: "";
   position: absolute;
-  /* background-color: red; */
   width: 0px;
   height: 0px;
   top: 515px;
@@ -351,7 +328,6 @@
 .boton-direccion-horizontal-antes {
   content: "";
   position: absolute;
-  /* background-color: red; */
   width: 0px;
   height: 0px;
   top: 457px;
@@ -364,7 +340,6 @@
 .boton-direccion-horizontal-despues {
   content: "";
   position: absolute;
-  /* background-color: red; */
   width: 0px;
   height: 0px;
   top: 458px;
@@ -387,22 +362,6 @@
   box-shadow: inset 1px 15px 17px 1px rgb(180, 180, 180),
     inset -30px -37px 20px 10px rgb(255, 255, 255);
   transform: rotate(-25deg);
-}
-
-.botones-ab_xx {
-  content: "";
-  position: relative;
-  width: 44px;
-  height: 44px;
-  /* top: 424px; */
-  /* left: 334px; */
-  top: 8px;
-  left: 77px;
-  background: #a93671;
-  border-radius: 100%;
-  /* box-shadow: 18px 68px #a93671; */
-  box-shadow: 18px 68px #a93671;
-  transform: rotate(104deg);
 }
 
 .boton-a {
@@ -447,22 +406,11 @@
   content: "";
   position: absolute;
   background: #9999;
-  /* background-color: #9999; */
   border-radius: 10px;
   width: 60px;
   height: 12px;
   top: 570px;
   left: 150px;
-  /* Según el navegador hay que añadir el prefijo:
-        chrome: -webkit
-        firefox: -moz
-        resto: sin prefijo
-     */
-  /* Crear la sombra. Valores de desplazamiento:
-       horizontal vertical [desenfoque difusiónPropagación extensión color internaExterna]    
-    */
-  /* color: #dfdfdf; */
-  /* box-shadow: 57px 27px 0px #999, 0 0 0 5px #dfdfdf, 57px 27px 0 5px #dfdfdf; */
   box-shadow: 57px 27px 0px #999, 0 0 0 5px #dfdfdf, 57px 27px 0 5px #dfdfdf;
   transform: rotate(-25deg);
 }
@@ -499,7 +447,6 @@
 }
 
 .texto-auriculares {
-  /* position: relative; */
   color: #dadada;
   font-family: sans-serif;
   font-size: 8px;
@@ -510,24 +457,10 @@
 
 .indicador-auriculares {
   position: relative;
-  /* background: red; */
   background-color: #e8e8e8;
   width: 3px;
   height: 8px;
   margin-top: -12px;
   margin-left: 25px;
-  /* Crear la sombra. Valores de desplazamiento:
-       horizontal vertical [desenfoque difusiónPropagación extensión color internaExterna]    
-    */
   box-shadow: 5px 0px 0px 0px #e8e8e8, 10px 0px 0px 0px #e8e8e8;
-}
-
-/* EVENTOS */
-
-:root {
-  --is-big: 1;
-}
-
-.is-big {
-  --is-big: 1;
 }
